@@ -1,0 +1,37 @@
+/*
+selecteur(s) {
+propriété:valeur;
+}
+*/
+.gra {font-family: "Overpass", serif;
+     font-size: 160px;
+    background-size: 320px;
+     background-image:url("img/icone/a2.jpg");
+}
+.typo {font-family: "Overpass", serif;
+    font-size: 160px;
+   background-size: 320px;
+    background-image:url("img/icone/a22.jpg");}
+.container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+}
+h1 {
+    color: ;
+    padding: 20px;
+    font-family: serif;
+}
+
+body {
+    background:rgb(238, 238, 238);
+    margin-top: 100px;
+    padding: 50px
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+
