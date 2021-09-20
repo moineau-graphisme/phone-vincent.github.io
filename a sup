@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Buttons</title>
+</head>
+<body>
+    <ul>
+        <li>
+            <span><i class="fa fa-thumbs-o-up"></i></span>
+            <a href="#">Like</a>
+        </li>
+        <li>
+            <span><i class="fa fa-share"></i></span>
+            <a href="#">Share</a>
+        </li>
+        <li>
+            <span><i class="fa fa-heart"></i></span>
+            <a href="#">Subscribe</a>
+        </li>
+    </ul>
+
+</body>
+
+</html>

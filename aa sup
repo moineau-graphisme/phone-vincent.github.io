@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ccc;
+
+}
+ul{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+ul li{
+    list-style: none;
+    height: 65px;
+    width: 235px;
+    border: 1px solid black;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 35px;
+    transform: rotate(-30deg) skewX(25deg) translate(0, 0);
+    transition: 1s;
+    box-shadow: -30px 30px 60px rgb(0, 45, 0.5);
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    height: 100%;
+    width: 20px;
+    left: -20px;
+    background: #ffffff;
+    transform: rotate(0deg) skewY(-45deg);
+    transition: 1s;
+}
+
+ul li::after{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    height: 20px;
+    width: 100%;
+    left: -10px;
+    background: #ffffff;
+    transform: rotate(0deg) skewX(-45deg);
+    transition: 1s;
+}
+ul li a{
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+}
+ul li:hover{
+    background-color: black;
+    color: white;
+    margin-top: -20px;
+}
+
+ul li a:hover{
+    color: white;
+}
+ul li:hover::after{
+    box-shadow: -10px 10px 10px rgb(65, 85, 15);
+    background-color: aqua;
+}
+ul li:hover::before{
+    box-shadow: -10px 10px 10px rgb(65, 85, 15);
+
+    background-color: aqua;
+}
