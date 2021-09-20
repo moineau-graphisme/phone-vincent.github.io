@@ -3,35 +3,56 @@ selecteur(s) {
 propriété:valeur;
 }
 */
-.gra {font-family: "Overpass", serif;
-     font-size: 160px;
-    background-size: 320px;
-     background-image:url("img/icone/a2.jpg");
+.gra {
+  font-family: "Overpass", serif;
+  font-size: clamp(180px, 5vw, 230px);
 }
-.typo {font-family: "Overpass", serif;
-    font-size: 160px;
-   background-size: 320px;
-    background-image:url("img/icone/a22.jpg");}
-.container {
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
+::selection {
+  background: rgba(174, 129, 245, 0.192);
+  border-radius: 50%;
+  color: rgba(116, 22, 145, 0.452);
 }
-h1 {
-    color: ;
-    padding: 20px;
-    font-family: serif;
-}
-
+a {color: black;
+text-decoration: none;}
 body {
-    background:rgb(238, 238, 238);
-    margin-top: 100px;
-    padding: 50px
+  background: #faf2ed;
+  color: #111;
+  font-family: sans-serif;
+  line-height: 1;
+  margin: 24px;
 }
-
-img{
-    max-width: 100%;
-    display: block;
-    height: auto;
+.row {   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 24px;}
+  .raw {   display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin: 24px;}
+    .riw{   display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin: 24px;;}
+      .ruw{   display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 24px;
+        margin: 24px;}
+img {
+  max-width: 100%;
+  height: auto;
+  display: grid;
 }
+video{max-width: 100%;
+  display: grid;}
+/*smart phone ha a finir
 
+@supports (display: flex) {
+  @media screen and (min-width: 900px) {
+    body {
+      display: flex;
+    }
+  }
 
+  a {
+    color: black;
+  }*/
